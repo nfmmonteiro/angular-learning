@@ -1,0 +1,7 @@
+<div class="crop" (click)="onRatingClick()"
+    [style.width.px]="ratingWidth"
+    [title]="rating">
+    <div [style.width.px]="maxStarsWidth">
+        <span *ngFor="let star of stars" class="glyphicon glyphicon-star"></span>
+    </div>
+</div>
